@@ -66,7 +66,7 @@
                                         <limit>
                                             <counter>LINE</counter>
                                             <value>COVEREDRATIO</value>
-                                            <minimum>1</minimum>
+                                            <minimum>0.8</minimum>
                                         </limit>
                                     </limits>
                                 </rule>
@@ -80,11 +80,6 @@
                 <artifactId>maven-checkstyle-plugin</artifactId>
                 <version>2.9.1</version>
                 <configuration>
-                    <parent>
-                        <groupId>org.springframework.boot</groupId>
-                        <artifactId>spring-boot-starter-parent</artifactId>
-                        <version>1.3.1.RELEASE</version>
-                    </parent>
                     <configLocation>checkstyle.xml</configLocation>
                 </configuration>
 
